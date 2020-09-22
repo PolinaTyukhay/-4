@@ -1,4 +1,4 @@
-#include <stdio.h>
+п»ї#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <conio.h>
@@ -40,7 +40,7 @@ void add_before_value(list* l_head)
 	srand(time(NULL));
 	list* l = l_head;
 	int  val;
-	printf_s("число перед которым добавть число :\n");
+	printf_s("С‡РёСЃР»Рѕ РїРµСЂРµРґ РєРѕС‚РѕСЂС‹Рј РґРѕР±Р°РІС‚СЊ С‡РёСЃР»Рѕ :\n");
 	scanf_s("%d", &val);
 	int n = 0, k = 0;
 
@@ -56,7 +56,7 @@ void add_before_value(list* l_head)
 	}
 	if (n == 0)
 	{
-		printf_s("нет значение перед которым можно добавить");
+		printf_s("РЅРµС‚ Р·РЅР°С‡РµРЅРёРµ РїРµСЂРµРґ РєРѕС‚РѕСЂС‹Рј РјРѕР¶РЅРѕ РґРѕР±Р°РІРёС‚СЊ");
 		exit(0);
 		
 	}
@@ -110,20 +110,21 @@ void outputList(list* l_head)
 int main(int argc, char argv[])
 {
 	setlocale(LC_ALL, "Rus");
-	//заданеи 1
+	//Р·Р°РґР°РЅРµРё 1
+
 	int a;
 	srand(time(NULL));
 	scanf_s("%d", &a);
 	list* l1 = create_list(a);
-	printf_s("начальный список:\n");
+	printf_s("РЅР°С‡Р°Р»СЊРЅС‹Р№ СЃРїРёСЃРѕРє:\n");
 	outputList(l1);
 	add_random_value(l1);
 	add_before_value(l1);
-	printf_s("список после изменений :\n");
+	printf_s("СЃРїРёСЃРѕРє РїРѕСЃР»Рµ РёР·РјРµРЅРµРЅРёР№ :\n");
 	outputList(l1);
 	
 
-	//задание 2
+	//Р·Р°РґР°РЅРёРµ 2
 	/*int StoronaOgoroda=0, r=0;
 	StoronaOgoroda= atoi(argv[1]);
 	r= atoi(argv[2]);
